@@ -17,3 +17,19 @@ Home de uma loja feita em react.
    - Certifique-se de ajustar a porta conforme necessário.
 2. Inicie o aplicativo React: `npm start`
 
+# Mudanças feitas
+
+## Button.tsx:
+
+- Adição da propriedade children?: ReactNode; no tipo ButtonProps, tornando-a opcional.
+- Isso resolve o erro relacionado à falta da propriedade children no tipo ButtonProps.
+
+## Select.tsx:
+
+- Adição de tipos específicos para FlexDirection, Variation, Size e FontSize.
+- Modificação da propriedade direction para aceitar tanto FlexDirection quanto string.
+
+## Flex.tsx
+
+- Adição de tipos específicos para FlexDirection.
+- Modificação da propriedade direction para aceitar tanto FlexDirection quanto string.

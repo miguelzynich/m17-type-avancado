@@ -1,13 +1,14 @@
-import React, { PropsWithChildren } from 'react';
+import React, { ReactNode } from 'react';
 import 'tachyons/css/tachyons.min.css';
 import './Button.css';
 
 interface ButtonProps {
   align: string;
   variation: string;
+  children?: ReactNode; // Adicionando a propriedade children ao tipo ButtonProps
 }
 
-const Button: React.FC<PropsWithChildren<ButtonProps>> = ({ align, variation, children }) => {
+const Button: React.FC<ButtonProps> = ({ align, variation, children }) => {
   const btnClasses = `btn align-${align} ${getVariationClass(variation)} font-custom f5 link dim br3 bn ph5 ma3 b pv3 mb2 dib`;
 
   return (

@@ -3,12 +3,16 @@ import Flex from '../Flex/Flex';
 import 'tachyons/css/tachyons.min.css';
 import './Select.css';
 
+type FlexDirection = 'row' | 'column' | 'row-reverse' | 'column-reverse';
+type Variation = 'primary' | 'secondary' | 'tertiary';
+type Size = 'small' | 'medium' | 'large';
+type FontSize = 'small' | 'medium' | 'large';
 
 interface SelectProps {
-  direction: string;
-  variation: string;
-  size: string;
-  fSize: string;
+  direction: FlexDirection | string;
+  variation: Variation;
+  size: Size;
+  fSize: FontSize;
   id: string;
   labelText: string;
   children: ReactNode;
