@@ -21,15 +21,15 @@ Home de uma loja feita em react.
 
 ## Button.tsx:
 
-- Adição da propriedade children?: ReactNode; no tipo ButtonProps, tornando-a opcional.
-- Isso resolve o erro relacionado à falta da propriedade children no tipo ButtonProps.
+- Adição da propriedade children: ReactNode; no tipo ButtonProps, tornando opcional.
+- Isso resolve o erro relacionado a falta da propriedade children no tipo ButtonProps.
 
 ## Select.tsx:
 
-- Adição de tipos específicos para FlexDirection, Variation, Size e FontSize.
+- Adição de tipos para FlexDirection, Variation, Size e FontSize.
 - Modificação da propriedade direction para aceitar tanto FlexDirection quanto string.
 
 ## Flex.tsx
 
-- Adição de tipos específicos para FlexDirection.
+- Adição de tipos para FlexDirection.
 - Modificação da propriedade direction para aceitar tanto FlexDirection quanto string.
